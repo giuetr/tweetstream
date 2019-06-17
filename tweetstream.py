@@ -1,45 +1,48 @@
 import tweepy
 import json
 from pymongo import MongoClient
- 
-MONGO_HOST= 'mongodb://localhost:27017/twitterdb'
+
+
+#Database pointer: change the XXXXX with your local database URI:
+MONGO_HOST= 'mongodb://localhost:XXXXX/twitterdb'
                                              
- 
-WORDS = ['#morsi']
- 
-CONSUMER_KEY = "gm3lJlHa8rtznrTNnROqS1OIL"
-CONSUMER_SECRET = "woyMWkEPPH8JvCzZGRnmazJYWFLP8QwOM2SySNEmUsJOBR554E"
-ACCESS_TOKEN = "872551994-DILOE74Z3KplYZ71naMlTOLvdbkPcJkcbpudBGHL"
-ACCESS_TOKEN_SECRET = "3c7Mo09CfbuSMdyou64ZewDmNxu2SKBGzwLy4i7m4ay7j"
+#HASHTAGS list: edit the list with the tags to search
+WORDS = ['#hashtag1','hashtag2','hashtag3']
+
+#Twitter Streaming API credentials: use your private credentials
+CONSUMER_KEY = "xxx"
+CONSUMER_SECRET = "xxx"
+ACCESS_TOKEN = "xxx"
+ACCESS_TOKEN_SECRET = "xxx"
  
  
 class StreamListener(tweepy.StreamListener):    
-    #This is a class provided by tweepy to access the Twitter Streaming API. 
+    #tweepy class to access the Twitter Streaming API. 
  
     def on_connect(self):
         # Called initially to connect to the Streaming API
-        print("You are now connected to the streaming API.")
+        print("You are now connected to the Twitter streaming API.")
  
     def on_error(self, status_code):
-        # On error - if an error occurs, display the error / status code
+        # On error - display the error / status code
         print('An Error has occured: ' + repr(status_code))
         return False
  
     def on_data(self, data):
-        #This is the meat of the script...it connects to your mongoDB and stores the tweet
+        #The engine: database connection and real-time fetching:
         try:
             client = MongoClient(MONGO_HOST)
             
-            # Use twitterdb database. If it doesn't exist, it will be created.
+            # Use twitterdb database. If it doesn't exist, this creates one.
             db = client.twitterdb
     
             # Decode the JSON from Twitter
             datajson = json.loads(data)
             
-            #grab the 'created_at' data from the Tweet to use for display
+            #parse the Tweet 'created_at' data
             created_at = datajson['created_at']
  
-            #print out a message to the screen that we have collected a tweet
+            #message with timestamp of collection
             print("Tweet collected at " + str(created_at))
             
             #insert the data into the mongoDB into a collection called twitter_search
