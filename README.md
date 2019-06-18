@@ -50,6 +50,6 @@ Launch
 In the following example we are tracking Libra, Facebook's new cryptocurrency:
 ![](cmd1.gif)
 
-The stream is on and weets are stored in our database collection:
+The stream is on and Tweets are stored in our database collection:
 ![](db1.gif)
 
