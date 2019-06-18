@@ -1,3 +1,5 @@
+#Tweetstream core
+
 import tweepy
 import json
 from pymongo import MongoClient
@@ -7,7 +9,7 @@ from pymongo import MongoClient
 MONGO_HOST= 'mongodb://localhost:XXXXX/twitterdb'
                                              
 #HASHTAGS list: edit the list with the tags to search
-WORDS = ['#hashtag1','hashtag2','hashtag3']
+WORDS = ['#hashtag1','#hashtag2','#hashtag3']
 
 #Twitter Streaming API credentials: use your private credentials
 CONSUMER_KEY = "xxx"
