@@ -47,3 +47,4 @@ Launch
  $ python tweetstream.py
  ```
 
+![](cmd1.gif)
