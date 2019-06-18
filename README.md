@@ -6,7 +6,7 @@ A streaming engine for live fetching tweets and store them into a MongoDB databa
 
 An easy-to-use starting point to implement different analysis routines including sentiment analysis, textual analysis and other parsing methods.
 
-I.e.: the app can collect and store tweets based on a group of tickers ('#ADBE', '#NVDA', '#ORCL').
+I.e.: the app can collect and store tweets based on a group of tickers ('#ADBE', '#NVDA', '#ORCL', ...).
 
 
 Requirements:
