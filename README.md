@@ -2,7 +2,7 @@
 A streaming engine for live fetching tweets and store them into a MongoDB database.
 
 ------------- 
-Tweetstream is a light and functional solution for parsing Tweets in real time and storing them in a local MongoDB collection.
+**Tweetstream** is a light and functional solution for parsing Tweets in real time and storing them in a local MongoDB collection.
 
 An easy-to-use starting point to implement different analysis routines including sentiment analysis, textual analysis and other parsing methods.
 
@@ -33,7 +33,7 @@ Point it to your local MongoDB:
 MONGO_HOST= 'mongodb://localhost:XXXXX/twitterdb'
 ```
 
-And edit the 'WORDS' list with your hastags of interest:
+And edit the 'WORDS' list with your hashtags of interest:
 ```bash
 WORDS = ['#EU','#Italy','#Germany']
 ```
@@ -42,12 +42,12 @@ WORDS = ['#EU','#Italy','#Germany']
 Launch
 ------------- 
 
- Simply launch it via the prompt and start collecting tweets in real-time:
+ Simply launch it via prompt and start collecting tweets in real-time:
  ```bash
  $ python tweetstream.py
  ```
  
-In the following example we are tracking Libra, Facebook's new cryptocurrency:
+In the following example we are tracking ***Libra***, Facebook's new cryptocurrency:
 ![](cmd1.gif)
 
 The stream is on and Tweets are stored in our database collection:
