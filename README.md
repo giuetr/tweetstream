@@ -35,7 +35,7 @@ host_mongo= 'mongodb://localhost:XXXXX/twitterdb'
 
 And edit the **'tags'** list with your hashtags of interest:
 ```bash
-tags = ['#EU','#Italy','#Germany']
+tags = ['#EU','#Italy','#Germany','#Libra',...]
 ```
 
 
