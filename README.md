@@ -18,24 +18,24 @@ Requirements:
 
 Editing
 -------
-The code can be used as-it-is, just edit it with your Twitter Streaming API keys:
+The code can be used as-it-is, just edit it with your **Twitter Streaming API keys**:
 
 ```bash
-CONSUMER_KEY = "your consumer key"
-CONSUMER_SECRET = "your consumer secret"
-ACCESS_TOKEN = "your access token"
-ACCESS_TOKEN_SECRET = "your access token secret"
+consumer_key = "your consumer key"
+consumer_secr = "your consumer secret"
+access_tkn = "your access token"
+access_tkn_secr = "your access token secret"
 ```
 
-Point it to your local MongoDB:
+Point it to your **local MongoDB**:
 
 ```bash
-MONGO_HOST= 'mongodb://localhost:XXXXX/twitterdb'
+host_mongo= 'mongodb://localhost:XXXXX/twitterdb'
 ```
 
-And edit the 'WORDS' list with your hashtags of interest:
+And edit the **'tags'** list with your hashtags of interest:
 ```bash
-WORDS = ['#EU','#Italy','#Germany']
+tags = ['#EU','#Italy','#Germany']
 ```
 
 
