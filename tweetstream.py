@@ -1,4 +1,7 @@
 #Tweetstream core
+#A lightweight seamless engine that streams live tweets into a MongoDB collection based on a pre-defined set of hashtags.
+#by giuetr ☼☼☼
+
 
 import tweepy
 import json
