@@ -53,3 +53,11 @@ In the following example we are tracking ***Libra***, Facebook's new cryptocurre
 The stream is on and Tweets are stored in our database collection:
 ![](db1.gif)
 
+
+
+License:
+-------------
+
+GNU General Public License v3.0
+
+Copyright © 2019 giuetr
