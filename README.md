@@ -60,4 +60,4 @@ License:
 
 GNU General Public License v3.0
 
-Copyright © 2019 giuetr
+Copyright © 2021 giuetr
